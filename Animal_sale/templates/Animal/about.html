@@ -1,0 +1,49 @@
+{% extends 'Animal/base.html' %}
+{% load static %}
+
+{% block content %}
+
+<div class=" mt-5">
+    <div class="text-center mt-5">
+        <img src="{% static 'images/about_icon.jpg' %}" alt="profilepic" class="img-thumbnail " width="220px"
+            height="180px">
+    </div>
+    <div class=" mt-t-5 text-white mx-5 text-justify">
+        <h1 class="font-weight-bold st-font">Hello,</h1>
+        <div class="px-4" style="line-height: 1.5 rem;">
+            <!--<p class="text-justify" style="text-indent:100px; ">I am <b class="text-warning">Shraddha Yadav</p>-->Pashufarm.com is an online marketplace established with the aim to strengthen Livestock Economy of the country. It helps farmers, livestock enterprises, self-employed, individuals to achieve their full potential while ensuring livestock well-being.</p>
+            <p class="text-justify" style "color:white;">Pashushala.com offers:
+ 
+                Livestock owners, a platform to showcase their stocks to a plethora of genuinely interested buyers. It optimizes their returns without the hassle of taking livestock to animal fairs, engaging intermittent brokers, doing discounted sales under pressure and curb wait time for sales.
+                
+                Buyers a platform that significantly reduces the time and energy spent on discovery of sellers, livestock verification, price negotiation, and final purchase.
+                
+                Its users an access to vast pool of knowledge, literature and research content on livestock to ensure wellbeing and productivity of livestock.
+                
+                Livestock is an integral part of the Indian economic, cultural and social setup. About 20.5 million people depend upon it for their livelihood - close to two-third of rural India. It provides employment to about 8.8 % of the population.
+                
+                India has a vast livestock resource, which contributes 4.11% to India’s GDP and 25.6% of total Agriculture GDP. Cattle have always played a significant role in sustaining the agriculture system by providing vital inputs like manure and draught power. For a large section of rural India, cattle rearing, providing a steady income, is essential for survival. Farm animals also create a significant number of jobs and small/ancillary business opportunities.
+                
+                 
+                Livestock provides income (Primary or Secondary), Employment, Food, Social Security, Draft and Consumable/Non-consumable products of commercial relevance.
+                
+                Livestock market in India is highly unorganized and distributed. Purchase is mostly done through traditional channels like, fairs, word of mouth, brokers, etc. There exists a vast information disparity and price arbitrage resulting into uneven distribution of superior breeds – in consequence yield to a livestock owner varies vastly. Access to quality and affordable livestock services is affected by many factors including lack of quality service providers, physical distances, price parity, information and socio-cultural barriers.
+                
+                Pashushala.com is an all-inclusive ecosystem that offers innovative business models to unlock the value and income generating potential from livestock. It leverages the penetration of Internet users and employees advance technology to enhance value to all the stakeholders. The ecosystem is an effort to help grow contribution of livestock in lives of individuals, entrepreneurs and nation as a whole.</p>
+           
+
+            </p>
+            <p><b class="text-warning st-font">Thanking You</b></p>
+        </div>
+    </div>
+    <div class="text-center ml-4 mr-10">
+     
+     <a href="{% url 'contact' %}" class="btn btn-outline-info">Contact</a>
+    </div>
+</div>
+
+
+
+
+{% endblock content %}
+

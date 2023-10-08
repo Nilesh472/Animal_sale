@@ -1,0 +1,23 @@
+{% extends 'Animal/base.html' %}
+{% block content %}
+<div class="container">
+ 
+    <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
+        {% for specie in species %}
+       
+        <div class="card mt-5 mb-3" style="width: 18rem;">
+            <img src="{{specie.image.url}}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">{{specie.title}}</h5>
+              <p class="card-text">{{specie.description}}</p>
+              <a href="{% url 'buy' %}" class="btn btn-danger">BUY/Book Now</a>
+
+            </div>
+          </div>
+          {% endfor %}
+    </div>
+    
+
+  </div>
+ 
+{% endblock content %}
